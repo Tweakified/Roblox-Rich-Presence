@@ -77,11 +77,11 @@ def main():
                             client.set_activity(state=state, details=details, start=start, large_image=image, party_size=gameSize, large_text="Made by Tweakified")
                         else:
                             client.set_activity(state=state, details=details, start=start, large_image=image, large_text="Made by Tweakified")
-                        previous = data
                         activityCleared = False
                         time.sleep(15)
                     else:
                         time.sleep(5)
+                previous = data
                     
         if ClientClosed == False:
             if client != None:
